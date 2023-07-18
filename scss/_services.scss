@@ -1,0 +1,124 @@
+#services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3.6rem;
+
+  .services-img {
+    img {
+      width: 360px;
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+
+  .services-texts {
+    width: 100%;
+    margin-top: 2.5rem;
+    h2 {
+      text-align: center;
+      font-size: $font-h2;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 49px;
+    }
+
+    > p {
+      margin-top: 1.6rem;
+      color: $font-color;
+      text-align: center;
+      font-size: $font-16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+}
+
+.services-items {
+  display: flex;
+  margin-top: 2.6rem;
+  flex-direction: column;
+  row-gap: 2.6rem;
+  .flower-item {
+    display: flex;
+    justify-content: start;
+    column-gap: 2.3rem;
+
+    p {
+      max-width: 29rem;
+      text-align: left;
+      color: $color-first;
+      font-size: $font-16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+}
+
+@media screen and (min-width: 820px) {
+  #services {
+    display: flex;
+    align-items: stretch;
+    margin: 0 auto;
+    margin-top: 10rem;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 2.5rem;
+    .services-img {
+      img {
+        height: 100%;
+        max-width: 45rem;
+      }
+    }
+
+    .services-texts {
+      h2 {
+        text-align: left;
+        margin-top: -2.5rem;
+        max-width: 43rem;
+      }
+      > p {
+        text-align: left;
+        font-size: 1.4rem;
+      }
+    }
+
+    .services-items {
+      .flower-item {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1300px;
+    margin: auto;
+  }
+
+  #services {
+    display: flex;
+    column-gap: 25rem;
+    justify-content: space-between;
+    .services-img {
+      img {
+        width: 70rem;
+      }
+    }
+
+    .services-texts {
+      h2 {
+        max-width: 85rem;
+        font-size: 5rem;
+      }
+
+      p{
+        max-width: 55rem;
+      }
+    }
+  }
+}

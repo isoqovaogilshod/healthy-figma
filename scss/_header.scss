@@ -1,0 +1,141 @@
+nav {
+  display: flex;
+  align-items: center;
+  padding: 2.8rem 0;
+  justify-content: space-between;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  column-gap: 1.2rem;
+  .logo {
+    color: #285e67;
+    text-align: center;
+    font-size: 2.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+  }
+}
+.nav-links {
+  .links {
+    display: none;
+  }
+}
+
+.hero {
+  h1 {
+    text-align: center;
+    font-size: 3.7rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 47px;
+    color: $font-color;
+  }
+  p {
+    text-align: center;
+    font-size: $font-16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  button {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 3.3rem;
+    padding: 1.6rem 5rem;
+    border-radius: 67px;
+    background: $color-first;
+    color: var(--color-gray-white, #fff);
+    text-align: center;
+    font-size: 2.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .hero-imgs {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 4rem;
+    flex-direction: column;
+    row-gap: 3rem;
+    img {
+      display: flex;
+      margin: 0 auto;
+      max-width: 28rem;
+    }
+  }
+}
+
+@media screen and (min-width: 820px) {
+  nav {
+    .bars-none {
+      display: none;
+    }
+  }
+  .nav-links {
+    .links {
+      display: flex;
+      column-gap: 4rem;
+      a {
+        font-size: $font-16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        color: #2b2b2b;
+      }
+    }
+  }
+
+  .hero {
+    h1 {
+      max-width: 50rem;
+      display: flex;
+      margin: 0 auto;
+    }
+    p {
+      display: flex;
+      margin: 0 auto;
+      max-width: 65rem;
+      margin-top: 1rem;
+    }
+    .hero-imgs {
+      display: flex;
+      flex-direction: row;
+      column-gap: 2rem;
+      img {
+        max-width: 33rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1300px;
+    margin: auto;
+  }
+
+  .hero {
+    h1 {
+      font-size: 6.5rem;
+      max-width: 140rem;
+      margin-top: 14.3rem;
+    }
+
+    p{
+      max-width: 110rem;
+      display: flex;
+      margin: 0 auto;
+      font-size: 1.8rem;
+      margin-top: 2rem;
+    }
+
+    .hero-imgs{
+      img{
+        max-width: 76rem;
+      }
+    }
+  }
+}
